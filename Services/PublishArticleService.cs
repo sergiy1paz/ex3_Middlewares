@@ -18,16 +18,17 @@ namespace Services
 
         public string Publish()
         {
-            string text = null;            
+            string text = null;
             try
             {
                 // some logic ... 
                 text = _articleInfo.Content;
-                Console.WriteLine("Опубліковано");
-                
-            } catch (Exception)
+                Console.WriteLine("Article was published");
+
+            }
+            catch (Exception)
             {
-                Console.WriteLine("Помилка публікації");
+                Console.WriteLine("Error of publishing!");
                 text = "Error!";
             }
             return text;

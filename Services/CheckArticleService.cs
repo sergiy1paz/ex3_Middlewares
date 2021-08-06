@@ -18,7 +18,7 @@ namespace Services
 
         public bool Check()
         {
-            return _articleInfo.Content is not null;
+            return !string.IsNullOrEmpty(_articleInfo.Content);
         }
     }
 }
